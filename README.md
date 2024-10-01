@@ -25,6 +25,7 @@ Gather Documents: Collect example documents related to your topic. You can use t
 - Project Gutenberg: https://www.gutenberg.org/
 - Wikipedia Article Export: https://en.wikipedia.org/wiki/Special
 - OpenAI Cookbook: https://github.com/openai/openai-cookbook/tree/main/examples/data
+
 Ensure Compliance: Verify that the documents comply with ethical guidelines and do not contain disallowed content.
 
 ### Create a Vector Store
@@ -44,15 +45,15 @@ Ensure Compliance: Verify that the documents comply with ethical guidelines and 
 
 ### Team Discussion
 
-Analyze Results: Evaluate the relevance and accuracy of the generated responses.
-Optimize: Experiment with different prompts and retrieval strategies to improve outcomes.
+1. Analyze Results: Evaluate the relevance and accuracy of the generated responses.
+2. Optimize: Experiment with different prompts and retrieval strategies to improve outcomes.
 ### Resources
-OpenAI Playground: https://platform.openai.com/playground
-Vector Stores Documentation: OpenAI Vector Stores Guide
+- OpenAI Playground: https://platform.openai.com/playground
+- Vector Stores Documentation: [OpenAI Vector Stores Guide](https://platform.openai.com/docs/assistants/tools/file-search/vector-stores)
 ### Data Sources:
-Kaggle Datasets: https://www.kaggle.com/datasets
-Project Gutenberg: https://www.gutenberg.org/
-Wikipedia Export: https://en.wikipedia.org/wiki/Special
+- Kaggle Datasets: https://www.kaggle.com/datasets
+- Project Gutenberg: https://www.gutenberg.org/
+- Wikipedia Export: https://en.wikipedia.org/wiki/Special
 
 ## Assignment 2: Fine-Tuning a Language Model (60 min)
 ### Objective
@@ -65,7 +66,7 @@ Notebook Link: [The Google Colab Notebook](https://colab.research.google.com/dri
 
 ### Select a Dataset for Fine-Tuning
 
-Choose a dataset suitable for NER tasks. Examples include:
+Choose a dataset suitable for [NER](https://cookbook.openai.com/examples/named_entity_recognition_to_enrich_text) tasks. Examples include:
 It needs to have the following characteristics:
 1. Have a title 
 2. Have something that describes the item from which you want to extract.
