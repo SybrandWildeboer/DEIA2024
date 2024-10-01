@@ -21,9 +21,10 @@ Familiarize yourself with vector stores by reviewing the documentation: https://
 
 Select a Topic: Choose a specific topic of interest for your team.
 Gather Documents: Collect example documents related to your topic. You can use the following resources:
-    Kaggle Datasets: https://www.kaggle.com/datasets
-    Project Gutenberg: https://www.gutenberg.org/
-    Wikipedia Article Export: https://en.wikipedia.org/wiki/Special
+- Kaggle Datasets: https://www.kaggle.com/datasets
+- Project Gutenberg: https://www.gutenberg.org/
+- Wikipedia Article Export: https://en.wikipedia.org/wiki/Special
+- OpenAI Cookbook: https://github.com/openai/openai-cookbook/tree/main/examples/data
 Ensure Compliance: Verify that the documents comply with ethical guidelines and do not contain disallowed content.
 
 ### Create a Vector Store
@@ -60,52 +61,61 @@ Understand the process of fine-tuning a language model to perform a specific tas
 ### Instructions
 Access the Google Colab Notebook
 
-Notebook Link: Fine-Tuning Notebook
-Open in Playground Mode:
-Click on "Open in Playground" at the top of the notebook page to work in an editable session without affecting others.
-Select a Dataset for Fine-Tuning
+Notebook Link: https://colab.research.google.com/drive/1SuZ7usUjsQS6-Y5_RXioj-k5d0Y_H_ic?usp=sharing
+
+### Select a Dataset for Fine-Tuning
 
 Choose a dataset suitable for NER tasks. Examples include:
-CoNLL-2003 NER Dataset: GitHub Repository
-Kaggle NER Dataset: GitHub Repository
-Download the Dataset: Ensure you have the dataset files accessible within the Colab environment.
-Prepare the Data
+It needs to have the following characteristics:
+1. Have a title 
+2. Have something that describes the item from which you want to extract.
+3. The named entities that should be extracted from the description (the desired outcome from the LLM)
+4. Make sure the dataset is available through an url, preferably github as a csv file.
 
-Follow the notebook instructions to format and upload the dataset for fine-tuning.
+#### Example dataset (simplified)
+| Title                          | Description                                                      | Named Entity Outcome                                      |
+|--------------------------------|------------------------------------------------------------------|-----------------------------------------------------------|
+| Apple Unveils New iPhone       | Apple has announced the release of the new iPhone 13 in the USA. | Apple (ORG), iPhone 13 (PRODUCT), USA (GPE)               |
+| SpaceX Launches Starship       | SpaceX successfully launched its Starship rocket from Texas.     | SpaceX (ORG), Starship (PRODUCT), Texas (GPE)             |
+| Microsoft Acquires GitHub      | Microsoft Corporation has acquired GitHub for $7.5 billion.      | Microsoft Corporation (ORG), GitHub (ORG), $7.5 billion (MONEY) |
+| Olympic Games in Tokyo         | The 2020 Summer Olympics were held in Tokyo, Japan.              | 2020 Summer Olympics (EVENT), Tokyo (GPE), Japan (GPE)    |
+| Climate Summit in Paris        | Leaders met in Paris to discuss climate change initiatives.      | Paris (GPE), climate change initiatives (TOPIC)           |
+
+### Prepare the Data
+
+Follow the notebook instructions to use the dataset.
 Ensure that the data complies with OpenAI's policies and ethical guidelines.
-Fine-Tune the Model
+### Fine-Tune the Model
 
 Run the cells in the notebook to fine-tune the language model on your selected dataset.
-Adjust hyperparameters as necessary, but keep coding changes to a minimum.
-Evaluate the Fine-Tuned Model
+Adjust hyperparameters (training set size) as necessary, but keep coding changes to a minimum.
+### Evaluate the Fine-Tuned Model
 
 Test the model's performance on a validation set or sample inputs.
 Compare the results to the base model to assess improvements.
-Team Discussion
+### Team Discussion
 
-Reflect on Findings: Discuss the impact of fine-tuning on model performance.
-Ethical Considerations: Consider any ethical implications related to data use and model behavior.
-Resources
+1. Reflect on Findings: Discuss the impact of fine-tuning on model performance.
+2. Ethical Considerations: Consider any ethical implications related to data use and model behavior.
+### Resources
 Fine-Tuning Guide: OpenAI Fine-Tuning Guide
-Datasets:
-CoNLL-2003 NER Dataset: GitHub Repository
-Kaggle NER Dataset: GitHub Repository
-Additional Datasets for NER:
-WNUT-17 NER Dataset: GitHub Repository
-MIT Movie Corpus: GitHub Repository
-Team Collaboration Guidelines
-One Notebook Per Team: Only one team member needs to run the notebook.
-Collaboration: Work together to make decisions and interpret results.
-Avoid Interference: Do not access or edit other teams' notebooks.
-Ethical Considerations
-Data Privacy: Ensure all data used is publicly available and complies with privacy laws.
-Content Policy: Avoid using disallowed content as per OpenAI's Usage Policies.
-Attribution: Provide proper attribution for any third-party datasets or resources used.
-Assistance and Support
-Instructor Support: Instructors and assistants are available to help with any questions or issues.
-Discussion Encouraged: Share insights and challenges with your team and others.
-Accessing the Fine-Tuning Notebook via QR Code
-To make it easy to access the fine-tuning notebook, you can use the following link:
+
+# Team Collaboration Guidelines
+- One Notebook Per Team: Only one team member needs to run the notebook.
+- Collaboration: Work together to make decisions and interpret results.
+- Avoid Interference: Do not access or edit other teams' notebooks.
+
+# Ethical Considerations
+- Data Privacy: Ensure all data used is publicly available and complies with privacy laws.
+- Content Policy: Avoid using disallowed content as per OpenAI's Usage Policies.
+
+# Assistance and Support
+- Instructor Support: Instructor and assistant are available to help with any questions or issues.
+- Discussion Encouraged: Share insights and challenges with your team and others.
+
+# Accessing the Fine-Tuning Notebook via URL
+To make it easy to access the fine-tuning notebook, you can use the following link: https://colab.research.google.com/drive/1SuZ7usUjsQS6-Y5_RXioj-k5d0Y_H_ic?usp=sharing
+It is also attached in this repository. However, the link allows quicker access to google colab.
 
 Notebook Link: Fine-Tuning Notebook
 # Additional Resources
