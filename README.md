@@ -6,7 +6,7 @@ Time: 12:00 PM – 4:30 PM (excluding breaks)
 # Assignments:
 Building a Retrieval-Augmented Generation (RAG) system using vector stores in OpenAI Playground.
 Fine-tuning a language model using a Google Colab notebook.
-## Assignment 1: Building a RAG System Using Vector Stores
+## Assignment 1: Building a RAG System Using Vector Stores (60 min)
 ### Objective
 Learn how to enhance language model responses by integrating a vector store to retrieve relevant information, thereby building a Retrieval-Augmented Generation (RAG) system.
 
@@ -16,7 +16,7 @@ Access OpenAI Playground
 Log in to the OpenAI Playground: https://platform.openai.com/playground
 ### Introduction to Vector Stores
 
-Familiarize yourself with vector stores by reviewing the documentation: https://platform.openai.com/docs/assistants/tools/file-search/vector-stores
+Familiarize yourself with vector stores by reviewing the documentation: [OpenAI Vector Stores](https://platform.openai.com/docs/assistants/tools/file-search/vector-stores)
 ### Data Preparation
 
 Select a Topic: Choose a specific topic of interest for your team.
@@ -54,14 +54,14 @@ Kaggle Datasets: https://www.kaggle.com/datasets
 Project Gutenberg: https://www.gutenberg.org/
 Wikipedia Export: https://en.wikipedia.org/wiki/Special
 
-## Assignment 2: Fine-Tuning a Language Model
+## Assignment 2: Fine-Tuning a Language Model (60 min)
 ### Objective
 Understand the process of fine-tuning a language model to perform a specific task, such as Named Entity Recognition (NER), using a pre-prepared Google Colab notebook.
 
 ### Instructions
 Access the Google Colab Notebook
 
-Notebook Link: https://colab.research.google.com/drive/1SuZ7usUjsQS6-Y5_RXioj-k5d0Y_H_ic?usp=sharing
+Notebook Link: [The Google Colab Notebook](https://colab.research.google.com/drive/1SuZ7usUjsQS6-Y5_RXioj-k5d0Y_H_ic?usp=sharing)
 
 ### Select a Dataset for Fine-Tuning
 
@@ -98,7 +98,7 @@ Compare the results to the base model to assess improvements.
 1. Reflect on Findings: Discuss the impact of fine-tuning on model performance.
 2. Ethical Considerations: Consider any ethical implications related to data use and model behavior.
 ### Resources
-Fine-Tuning Guide: OpenAI Fine-Tuning Guide
+Fine-Tuning Guide: [OpenAI Fine-Tuning Guide](https://platform.openai.com/docs/guides/fine-tuning)
 
 # Team Collaboration Guidelines
 - One Notebook Per Team: Only one team member needs to run the notebook.
@@ -115,10 +115,10 @@ Fine-Tuning Guide: OpenAI Fine-Tuning Guide
 
 # Accessing the Fine-Tuning Notebook via URL
 To make it easy to access the fine-tuning notebook, you can use the following link: https://colab.research.google.com/drive/1SuZ7usUjsQS6-Y5_RXioj-k5d0Y_H_ic?usp=sharing
+
 It is also attached in this repository. However, the link allows quicker access to google colab.
 
-Notebook Link: Fine-Tuning Notebook
 # Additional Resources
-OpenAI API Documentation: https://platform.openai.com/docs/api-reference
-OpenAI Cookbook: https://github.com/openai/openai-cookbook
-Hugging Face Datasets: https://huggingface.co/datasets
+- OpenAI API Documentation: https://platform.openai.com/docs/api-reference
+- OpenAI Cookbook: https://github.com/openai/openai-cookbook
+- Hugging Face Datasets: https://huggingface.co/datasets
